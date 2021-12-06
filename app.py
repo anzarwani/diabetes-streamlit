@@ -21,7 +21,7 @@ def data():
     skin_thickness = st.number_input("Triceps skin fold thickness (mm) (0-99)")
     insulin = st.number_input("2-Hour serum insulin (mu U/ml) (0-846)")
     bmi = st.number_input("Body mass index (BMI)")
-    dpf = st.number_input("Diabetes Pedigree Function value (0.08 - 2.42)")
+    dpf = st.number_input("Diabetes Pedigree Function value (0.08 - 2.42) - function which scores likelihood of diabetes based on family history")
     age = st.slider("Age")
     
     X_new = np.array([[preg,plasma,bp,skin_thickness,insulin,bmi,dpf,age]])
